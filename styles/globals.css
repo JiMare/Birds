@@ -1,26 +1,84 @@
 html,
-body {
+body,
+* {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
+  font-family: "Inter", sans-serif;
 }
 
 * {
   box-sizing: border-box;
 }
 
-.header{
-  background-color: #D1D646;
+/*basic*/
+
+.button {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 0;
+}
+
+.button--green {
+  background-color: #7c9f35;
+  color: #ffff;
+}
+
+/*header*/
+
+.header {
+  background-color: #d1d646;
   display: flex;
   align-items: center;
 }
 
-.bird-logo{
+.header__logo {
   padding: 1rem;
+  margin-right: auto;
+}
+
+/*landing-page*/
+
+.landing-page {
+  background-image: url(/images/bird-home-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 530px;
+  position: relative;
+}
+
+.landing-page__button {
+  position: absolute;
+  bottom: 30%;
+  left: 10%;
+}
+
+.landing-page__text {
+  padding: 1.5rem;
+  position: absolute;
+  bottom: 0;
+  background-color: black;
+  opacity: 0.3;
+  color: #ffff;
+  margin: 0;
+}
+
+/*slider*/
+
+.image-container {
+  max-width: 100%;
+}
+
+.image-container__image {
+  vertical-align: bottom;
+}
+
+/*footer*/
+
+.footer {
+  background-color: #7c9f35;
+  color: #ffff;
+  padding: 1rem;
+  text-align: center;
 }
