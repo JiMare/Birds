@@ -59,7 +59,7 @@ body,
   position: absolute;
   bottom: 0;
   background-color: black;
-  opacity: 0.3;
+  opacity: 0.5;
   color: #ffff;
   margin: 0;
 }
@@ -68,10 +68,37 @@ body,
 
 .image-container {
   max-width: 100%;
+  font-size: 0;
 }
 
-.image-container__image {
-  vertical-align: bottom;
+/*catalogue*/
+
+.catalogue {
+  text-align: center;
+}
+
+.bird-card {
+  border-top: 2px solid #7c9f35;
+  position: relative;
+  font-size: 0;
+}
+
+.bird-card__subtitle {
+  padding-bottom: 0.5rem;
+  font-style: italic;
+  font-weight: 200;
+  font-size: 1rem;
+}
+
+.bird-card__titles {
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+  font-size: 1.5rem;
+  background-color: black;
+  opacity: 0.5;
+  color: #ffff;
+  width: 100%;
 }
 
 /*footer*/

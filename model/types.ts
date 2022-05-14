@@ -8,12 +8,8 @@ export type Bird = {
   family: string;
   colours: string[];
   height: BirdHeight;
-  image: Image;
+  image: string;
   audio: any;
   feed: string[];
 };
 
-export type Image = {
-  id: number;
-  url: string;
-};

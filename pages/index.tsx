@@ -4,7 +4,6 @@ import Link from "next/link";
 import Slider from "../components/basic/Slider";
 
 const Home: NextPage = (): ReactElement => {
-
   const slides = [
     "/images/home-slider/slide1.jpg",
     "/images/home-slider/slide2.jpg",
@@ -26,7 +25,7 @@ const Home: NextPage = (): ReactElement => {
           pohostit.{" "}
         </p>
       </main>
-      <Slider slides={slides}/>
+      <Slider slides={slides} />
     </>
   );
 };
