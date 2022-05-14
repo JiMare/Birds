@@ -24,6 +24,14 @@ body,
   color: #ffff;
 }
 
+.titles {
+  position: absolute;
+  background-color: black;
+  opacity: 0.5;
+  color: #ffff;
+  width: 100%;
+}
+
 /*header*/
 
 .header {
@@ -91,14 +99,47 @@ body,
 }
 
 .bird-card__titles {
-  position: absolute;
   bottom: 0;
   z-index: 2;
   font-size: 1.5rem;
-  background-color: black;
-  opacity: 0.5;
-  color: #ffff;
-  width: 100%;
+}
+
+/*contact*/
+
+.contact {
+  background-image: url(/images/contact.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 530px;
+  position: relative;
+}
+
+.contact__titles {
+  text-align: center;
+  padding: 1rem;
+}
+
+.contact__subtitle {
+  font-weight: 200;
+}
+
+.button--contact {
+  text-decoration: none;
+  background-color: #d1d646;
+  position: absolute;
+  bottom: 10rem;
+  left: calc(50% - 68px);
+}
+
+.media {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.media__icon {
+  color: #7c9f35;
 }
 
 /*footer*/

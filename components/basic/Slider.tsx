@@ -24,7 +24,7 @@ const Slider = ({ slides }: Props) => {
       <Image
         className="image-container__image"
         src={slides[slideIndex]}
-        width={500}
+        width={400}
         height={300}
         alt="bird-slide"
       />
