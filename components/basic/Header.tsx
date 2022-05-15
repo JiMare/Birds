@@ -19,8 +19,6 @@ const navigationLinks: NavigationLink[] = [
 ];
 
 const Header = ({ title }: Props) => {
-
-  const [open, setOpen] = useState(false);
   return (
     <header className="header">
       <div className="header__logo">
@@ -36,13 +34,26 @@ const Header = ({ title }: Props) => {
         </Link>
       </div>
 
-      <div>{title}</div>
-  
+      <div className="header__title">{title}</div>
+
+      <input
+        type="checkbox"
+        className="header__checkbox"
+        id="header-checkbox"
+      />
+      <label htmlFor="header-checkbox" className="header__toggler">
+        ☰
+      </label>
+
+      <ul className="header__list">
         {navigationLinks.map((link) => (
-          <Link key={link.name} href={link.href}>
-            {link.name}
-          </Link>
-        ))} 
+          <li key={link.name} className="header__item">
+            <Link href={link.href}>
+              <a className="header__link">{link.name}</a>
+            </Link>
+          </li>
+        ))}
+      </ul>
     </header>
   );
 };

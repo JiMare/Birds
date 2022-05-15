@@ -38,11 +38,72 @@ body,
   background-color: #d1d646;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .header__logo {
   padding: 1rem;
-  margin-right: auto;
+}
+
+.header__title {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.5rem;
+}
+
+.header__checkbox {
+  position: absolute;
+  left: -9999px;
+}
+
+.header__list {
+  list-style: none;
+  position: absolute;
+  right: 0;
+  top: 74px;
+  background-color: #d1d646;
+  z-index: 2;
+  display: none;
+}
+
+.header__item {
+  padding: 1rem;
+  border-bottom: 1px solid #7c9f35;
+}
+
+.header__link {
+  text-decoration: none;
+}
+
+.header__item:hover {
+  background-color: #7c9f35;
+  cursor: pointer;
+}
+
+.header__toggler {
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.header__checkbox:checked ~ .header__list {
+  display: block;
+}
+
+@media screen and (min-width: 600px) {
+  .header__toggler {
+    display: none;
+  }
+  .header__list {
+    display: flex !important;
+    position: static;
+  }
+  .header__item {
+    border-bottom: 0;
+    border-right: 1px solid #7c9f35;
+  }
+
+  .header__title {
+  font-size: 2rem;
+}
 }
 
 /*landing-page*/

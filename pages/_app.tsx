@@ -15,6 +15,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap"
           rel="stylesheet"
         />
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet" />
         <link rel="icon" href="/favicon.ico" />
         <meta charSet="UTF-8" key="charset" />
         <meta

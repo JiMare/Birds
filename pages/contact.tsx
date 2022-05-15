@@ -1,7 +1,5 @@
 import React, { ReactElement } from "react";
 import type { NextPage } from "next";
-import Header from "../components/basic/Header";
-import Footer from "../components/basic/Footer";
 import Media from "../components/basic/Media";
 
 const Contact: NextPage = (): ReactElement => {
