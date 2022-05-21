@@ -17,6 +17,7 @@ body,
   padding: 0.5rem;
   border-radius: 0.5rem;
   border: 0;
+  cursor: pointer;
 }
 
 .button--green {
@@ -67,7 +68,7 @@ body,
 
 .header__item {
   padding: 1rem;
-  border-bottom: 1px solid #7c9f35;
+  border-top: 1px solid #7c9f35;
 }
 
 .header__link {
@@ -95,15 +96,21 @@ body,
   .header__list {
     display: flex !important;
     position: static;
+    height: 100%;
+    line-height: 2.5rem;
   }
   .header__item {
-    border-bottom: 0;
-    border-right: 1px solid #7c9f35;
+    border-top: 0;
+    border-left: 1px solid #7c9f35;
   }
 
   .header__title {
-  font-size: 2rem;
-}
+    font-size: 2rem;
+  }
+
+  .header__link {
+    display: inline-block;
+  }
 }
 
 /*landing-page*/
@@ -150,6 +157,7 @@ body,
   border-top: 2px solid #7c9f35;
   position: relative;
   font-size: 0;
+  cursor: pointer;
 }
 
 .bird-card__subtitle {

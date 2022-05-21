@@ -2,6 +2,7 @@ import { BirdHeight } from "./enums/BirdHeight";
 
 export type Bird = {
   id: number;
+  slug: string;
   name: string;
   latin: string;
   description: string;
@@ -9,7 +10,7 @@ export type Bird = {
   colours: string[];
   height: BirdHeight;
   image: string;
-  audio: any;
+  audio: string;
   feed: string[];
 };
 
