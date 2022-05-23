@@ -67,12 +67,15 @@ body,
 }
 
 .header__item {
-  padding: 1rem;
   border-top: 1px solid #7c9f35;
 }
 
 .header__link {
   text-decoration: none;
+  display: block;
+  padding: 1rem;
+  width: 100vw;
+  text-align: center;
 }
 
 .header__item:hover {
@@ -109,7 +112,7 @@ body,
   }
 
   .header__link {
-    display: inline-block;
+    width: auto;
   }
 }
 
@@ -209,6 +212,23 @@ body,
 
 .media__icon {
   color: #7c9f35;
+}
+
+/*feed*/
+
+.feed-card__image {
+  border-radius: 50%;
+}
+
+/*form*/
+
+.form__section{
+  display: flex;
+  flex-direction: column;
+}
+
+.form__radio-item{
+
 }
 
 /*footer*/

@@ -23,7 +23,7 @@ export const birds: Bird[] = [
     description:
       "Vrabec polní má velice širokou oblast výskytu, od Irska na západě přes celou Evropu a střední Asii až do Japonska a Indonésie. Od domácího vrabce se liší poněkud menší velikostí a zbarvením. Nápadná je u něho zejména kresba hlavy - temeno je celé červenohnědé a na bílých tvářích je výrazná okrouhlá černá skvrna. Od vrabce domácího se liší také hlasem. Ten je slabší, jemnější, a to jak vábení, tak i zpěv, který je jakousi směsicí různých tónů.",
     family: "vrabcovití",
-    colours: ["light-yellow", "brown", "black", "grey", "white"],
+    colours: ["yellow", "brown", "black", "grey", "white"],
     height: BirdHeight.TINY,
     image: "/images/img-birds/vrabec-polni.jpg",
     audio: "/audio/vrabec-polni.flac",
@@ -37,7 +37,7 @@ export const birds: Bird[] = [
     description:
       "Je velký přibližně jako vrabec. Má podsadité tělo, velkou hlavu a silný kuželovitý zobák, který je slonovinově zbarvený a díky pokleslým koutkům a tmavšímu opeření okolo kořene zobáku a očí budí výraz věčné nakvašenosti. Při příznivém počasí začínají samečkové zpívat již v lednu nebo počátkem února. Většinou to není zpěv úplný, spíše počátky zpěvu, ale během března se rozezpívají všichni a zpívají naplno.",
     family: "pěnkavovití",
-    colours: ["light-yellow", "brown", "black", "grey", "white"],
+    colours: ["yellow", "green"],
     height: BirdHeight.SMALL,
     image: "/images/img-birds/zvonek.jpg",
     audio: "/audio/zvonek.mp3",
