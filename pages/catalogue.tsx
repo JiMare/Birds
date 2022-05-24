@@ -16,7 +16,7 @@ const Catalogue: NextPage = (): ReactElement => {
   console.log(birdsByHeight);
 
   return (
-    <div className="catalogue">
+    <div className="catalogue main">
       {!filter.isActive &&
         birds.map((bird) => <BirdCard key={bird.id} bird={bird} />)}
       {filter.isActive &&

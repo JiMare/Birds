@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import { birds } from "../../public/data/birds";
 import Image from "next/image";
 import useSound from "../../components/hook/useSound";
+import mp3Icon from "../../public/icons/mp3.png"
 
 const BirdDetail = () => {
   const router = useRouter();
@@ -15,28 +16,34 @@ const BirdDetail = () => {
   );
 
   return (
-    <div>
-      <h1>{birdDetail?.name}</h1>
-      <h3>{birdDetail?.latin}</h3>
+    <div className="main bird-detail">
+      <h1 className="bird-detail__title">{birdDetail?.name}</h1>
+      <h3 className="bird-detail__subtitle">{birdDetail?.latin}</h3>
       <Image
         src={birdDetail?.image!}
         width={300}
         height={200}
         alt={`bird-${slug}`}
+        className="bird-detail__image"
       />
-      <h4>Čeleď: {birdDetail?.family}</h4>
-      <p>{birdDetail?.description}</p>
+      <h4 className="bird-detail__description-title">
+        Čeleď: {birdDetail?.family}
+      </h4>
+      <p className="bird-detail__description">{birdDetail?.description}</p>
       <button
         className="button"
         onClick={() => {
-          playAudio();
+          toggleAudio();
         }}
       >
-        PLAY
+        <Image
+          src="/icons/mp3.png"
+          width={50}
+          height={50}
+          alt="mp3 icon"
+         
+        />
       </button>
-      <button className="button" onClick={() => {
-        pauseAudio();
-      }}>PAUSE</button>
     </div>
   );
 };

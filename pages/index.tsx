@@ -11,7 +11,7 @@ const Home: NextPage = (): ReactElement => {
   ];
   return (
     <>
-      <main className="landing-page">
+      <main className="landing-page main">
         <Link href="/catalogue">
           <a>
             <button className="button button--green landing-page__button">
