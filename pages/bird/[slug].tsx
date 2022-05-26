@@ -11,7 +11,7 @@ const BirdDetail = () => {
 
   const birdDetail = birds.find((bird) => bird.slug === slug);
 
-  const [isPlaying, playAudio, pauseAudio, toggleAudio] = useSound(
+  const [playAudio, pauseAudio, toggleAudio] = useSound(
     birdDetail?.audio!
   );
 

@@ -232,15 +232,53 @@ body,
 
 /*form*/
 
-.form__section {
+.form-title {
+  text-align: center;
+  padding: 2rem;
+  color: #7c9f35;
+  font-size: xx-large;
+}
+
+.form-section {
   display: flex;
   flex-direction: column;
+  border: 2px solid #d1d646;
+  margin: 0.8rem;
+  border-radius: 0.3rem;
+  font-size: larger;
+  padding: 0.6rem;
 }
 
-.form__radio-item {
+.form-section__title {
+  text-align: center;
 }
 
-/*birde-detail*/
+.form-section__row {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 2rem;
+}
+
+.form-section__inputs {
+  padding-top: 2rem;
+}
+
+.form-section__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.form-section__checkbox {
+  padding-top: 0.3rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/*bird-detail*/
 
 .bird-detail {
   padding: 1rem;
@@ -256,16 +294,16 @@ body,
   padding-bottom: 0.6rem;
 }
 
-.bird-detail__image{
+.bird-detail__image {
   border-radius: 0.3rem;
 }
 
-.bird-detail__description-title{
+.bird-detail__description-title {
   padding-top: 0.8rem;
   padding-bottom: 0.4rem;
 }
 
-.bird-detail__description{
+.bird-detail__description {
   line-height: 1.5;
   padding-bottom: 0.6rem;
 }

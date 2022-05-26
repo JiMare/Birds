@@ -4,8 +4,8 @@ import FormFilter from "../components/filter/FormFilter";
 
 const Filter: NextPage = (): ReactElement => {
   return (
-    <div>
-      <h2>Filtruj: </h2>
+    <div className="main">
+      <h1 className="form-title">Filtruj: </h1>
       <FormFilter />
     </div>
   );

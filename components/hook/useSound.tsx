@@ -1,4 +1,3 @@
-import React from "react";
 import { useState, useEffect } from "react";
 
 export const useSound = (url: string) => {
@@ -7,9 +6,9 @@ export const useSound = (url: string) => {
   );
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
 
-  const playAudio = () => setIsPlaying(true);
-  const pauseAudio = () => setIsPlaying(false);
-  const toggleAudio = () => setIsPlaying(!isPlaying);
+  const playAudio = (): void => setIsPlaying(true);
+  const pauseAudio = (): void => setIsPlaying(false);
+  const toggleAudio = (): void => setIsPlaying(!isPlaying);
 
   useEffect(() => {
     if (audio) {
@@ -29,7 +28,7 @@ export const useSound = (url: string) => {
     };
   }, [audio]);
 
-  return [isPlaying, playAudio, pauseAudio, toggleAudio];
+  return [playAudio, pauseAudio, toggleAudio];
 };
 
 export default useSound;
