@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, ReactElement } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -18,7 +18,7 @@ const navigationLinks: NavigationLink[] = [
   { name: "Kontakt", href: "/contact" },
 ];
 
-const Header = ({ title }: Props) => {
+const Header = ({ title }: Props): ReactElement => {
   return (
     <header className="header">
       <div className="header__logo">

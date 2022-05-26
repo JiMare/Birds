@@ -1,11 +1,11 @@
-import React from "react";
+import React, { ReactElement } from "react";
 import Image from "next/image";
 
 type Props = {
   feed: string;
 };
 
-const FeedCard = ({ feed }: Props) => {
+const FeedCard = ({ feed }: Props): ReactElement => {
   return (
     <div className="feed-card">
       <h2>{feed}</h2>

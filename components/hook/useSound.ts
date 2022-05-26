@@ -1,6 +1,13 @@
 import { useState, useEffect } from "react";
 
-export const useSound = (url: string) => {
+type ResultType = {
+  isPlaying: boolean
+  playAudio: () => void;
+  pauseAudio: () => void;
+  toggleAudio: () => void;
+};
+
+export const useSound = (url: string): ResultType => {
   const [audio] = useState<HTMLAudioElement | undefined>(
     typeof Audio !== "undefined" ? new Audio(url) : undefined
   );
@@ -28,7 +35,7 @@ export const useSound = (url: string) => {
     };
   }, [audio]);
 
-  return [playAudio, pauseAudio, toggleAudio];
+  return { isPlaying, playAudio, pauseAudio, toggleAudio };
 };
 
 export default useSound;

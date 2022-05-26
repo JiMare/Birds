@@ -1,17 +1,16 @@
-import React, { useRef } from "react";
+import React, { ReactElement } from "react";
 import { useRouter } from "next/router";
 import { birds } from "../../public/data/birds";
 import Image from "next/image";
 import useSound from "../../components/hook/useSound";
-import mp3Icon from "../../public/icons/mp3.png"
 
-const BirdDetail = () => {
+const BirdDetail = (): ReactElement => {
   const router = useRouter();
   const { slug } = router.query;
 
   const birdDetail = birds.find((bird) => bird.slug === slug);
 
-  const [playAudio, pauseAudio, toggleAudio] = useSound(
+  const { isPlaying, playAudio, pauseAudio, toggleAudio } = useSound(
     birdDetail?.audio!
   );
 
@@ -36,13 +35,7 @@ const BirdDetail = () => {
           toggleAudio();
         }}
       >
-        <Image
-          src="/icons/mp3.png"
-          width={50}
-          height={50}
-          alt="mp3 icon"
-         
-        />
+        <Image src="/icons/mp3.png" width={50} height={50} alt="mp3 icon" />
       </button>
     </div>
   );

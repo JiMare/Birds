@@ -1,9 +1,9 @@
-import React from "react";
+import React, { ReactElement } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
 
-const Media = () => {
+const Media = (): ReactElement => {
   return (
     <div className="media">
       <Link href="https://github.com/JiMare" passHref={true}>

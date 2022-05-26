@@ -1,7 +1,11 @@
-import React from "react";
+import React, { ReactElement } from "react";
 
-const Footer = () => {
-  return <footer className="footer">&copy; JitkaM, 2022 - Czechitas, Staň se kodérkou</footer>;
+const Footer = (): ReactElement => {
+  return (
+    <footer className="footer">
+      &copy; JitkaM, 2022 - Czechitas, Staň se kodérkou
+    </footer>
+  );
 };
 
 export default Footer;

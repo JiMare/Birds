@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactElement } from "react";
 import { useForm } from "react-hook-form";
 import { clearFilter, setFilter } from "../../actions/filterActions";
 import { BirdHeight } from "../../model/enums/BirdHeight";
@@ -10,7 +10,7 @@ type FormValues = {
   feed: string[];
 };
 
-const FormFilter = () => {
+const FormFilter = (): ReactElement => {
   const { register, handleSubmit } = useForm<FormValues>();
 
   const onSubmit = (data: FormValues) => {

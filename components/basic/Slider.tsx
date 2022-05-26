@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, ReactElement } from "react";
 import Image from "next/image";
 
 type Props = {
   slides: string[];
 };
 
-const Slider = ({ slides }: Props) => {
+const Slider = ({ slides }: Props): ReactElement => {
   const [slideIndex, setSlideIndex] = useState(0);
 
   useEffect(() => {

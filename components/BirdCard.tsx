@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactElement } from "react";
 import { Bird } from "../model/types";
 import Image from "next/image";
 import Link from "next/link";
@@ -7,7 +7,7 @@ type Props = {
   bird: Bird;
 };
 
-const BirdCard = ({ bird }: Props) => {
+const BirdCard = ({ bird }: Props): ReactElement => {
   return (
     <Link href={`/bird/${bird.slug}`} passHref>
       <div className="bird-card">
