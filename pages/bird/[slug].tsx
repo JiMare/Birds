@@ -2,7 +2,7 @@ import React, { ReactElement } from "react";
 import { useRouter } from "next/router";
 import { birds } from "../../public/data/birds";
 import Image from "next/image";
-import useSound from "../../components/hook/useSound";
+import useSound from "../../hook/useSound";
 
 const BirdDetail = (): ReactElement => {
   const router = useRouter();

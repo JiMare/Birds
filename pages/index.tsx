@@ -1,14 +1,30 @@
 import React, { ReactElement } from "react";
 import type { NextPage } from "next";
 import Link from "next/link";
-import Slider from "../components/basic/Slider";
+import Image from "next/image";
+import MobileSlider from "../components/basic/MobileSlider";
+import useMediaQuery from "../hook/useMediaQuery";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+import Slider from 'react-slick'
+
 
 const Home: NextPage = (): ReactElement => {
+  const isMobile = useMediaQuery(650);
   const slides = [
     "/images/home-slider/slide1.jpg",
     "/images/home-slider/slide2.jpg",
     "/images/home-slider/slide3.jpg",
+    "/images/home-slider/slide4.jpg",
+    "/images/home-slider/slide5.jpg",
   ];
+   const settings = {
+     dots: true,
+     infinite: true,
+     speed: 500,
+     slidesToShow: 5,
+     slidesToScroll: 3,
+   };
   return (
     <>
       <main className="landing-page main">
@@ -25,7 +41,23 @@ const Home: NextPage = (): ReactElement => {
           pohostit.{" "}
         </p>
       </main>
-      <Slider slides={slides} />
+      {isMobile ? (
+        <MobileSlider slides={slides} />
+      ) : (
+        <div className="image-container">
+          <Slider {...settings}>
+            {slides.map((slide) => (
+              <Image
+                key={slide}
+                src={slide}
+                width={400}
+                height={300}
+                alt="photo-bird"
+              />
+            ))}
+          </Slider>
+        </div>
+      )}
     </>
   );
 };
