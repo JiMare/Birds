@@ -4,7 +4,7 @@ import Media from "../components/basic/Media";
 
 const Contact: NextPage = (): ReactElement => {
   return (
-    <>
+    <main className="main">
       <div className="contact">
         <div className="titles contact__titles">
           <h3> Made by junior react developer</h3>
@@ -18,7 +18,7 @@ const Contact: NextPage = (): ReactElement => {
         </a>
       </div>
       <Media />
-    </>
+    </main>
   );
 };
 
