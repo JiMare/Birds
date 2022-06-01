@@ -271,6 +271,18 @@ body,
   border-radius: 50%;
 }
 
+@media screen and (min-width: 650px) {
+  .feeds {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .feed-card {
+    flex-basis: 40%;
+  }
+}
+
 /*form*/
 
 .form-section {
