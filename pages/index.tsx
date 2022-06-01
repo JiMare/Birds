@@ -3,14 +3,14 @@ import type { NextPage } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import MobileSlider from "../components/basic/MobileSlider";
-import useMediaQuery from "../hook/useMediaQuery";
-import "slick-carousel/slick/slick.css"; 
+import useWindowDimensions from "../hook/useWindowDimensions";
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Slider from 'react-slick'
-
+import Slider from "react-slick";
 
 const Home: NextPage = (): ReactElement => {
-  const isMobile = useMediaQuery(650);
+  const [width] = useWindowDimensions();
+  const isMobile = width < 650;
   const slides = [
     "/images/home-slider/slide1.jpg",
     "/images/home-slider/slide2.jpg",
@@ -18,13 +18,13 @@ const Home: NextPage = (): ReactElement => {
     "/images/home-slider/slide4.jpg",
     "/images/home-slider/slide5.jpg",
   ];
-   const settings = {
-     dots: true,
-     infinite: true,
-     speed: 500,
-     slidesToShow: 5,
-     slidesToScroll: 3,
-   };
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 5,
+    slidesToScroll: 3,
+  };
   return (
     <>
       <main className="landing-page main">
