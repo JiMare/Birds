@@ -317,6 +317,28 @@ body,
   padding-bottom: 0.5rem;
 }
 
+.label {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  cursor: pointer;
+}
+
+.input {
+  cursor: pointer;
+}
+
+.button-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.button--form {
+  margin: 0 2rem 0.5rem 2rem;
+}
+
 @media screen and (min-width: 650px) {
   .form-section__inputs {
     flex-direction: row;
@@ -331,6 +353,13 @@ body,
   .form-section__item--checkbox {
     flex-basis: 20%;
   }
+  .button-wrapper {
+    flex-direction: row;
+    margin-top: 5rem;
+  }
+  .button--form:hover {
+  background-color: #d1d646;
+}
 }
 
 /*bird-detail*/
