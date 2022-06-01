@@ -299,14 +299,11 @@ body,
   text-align: center;
 }
 
-.form-section__row {
-  display: flex;
-  justify-content: space-around;
-  padding-bottom: 2rem;
-}
-
 .form-section__inputs {
   padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .form-section__item {
@@ -316,12 +313,24 @@ body,
   gap: 0.5rem;
 }
 
-.form-section__checkbox {
-  padding-top: 0.3rem;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  gap: 0.5rem;
+.form-section__item--checkbox {
+  padding-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 650px) {
+  .form-section__inputs {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .form-section__item {
+    flex-basis: 25%;
+  }
+  .form-section__inputs--checkbox {
+    flex-wrap: wrap;
+  }
+  .form-section__item--checkbox {
+    flex-basis: 20%;
+  }
 }
 
 /*bird-detail*/
