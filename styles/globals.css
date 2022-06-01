@@ -37,8 +37,21 @@ body,
   width: 100%;
 }
 
+.title {
+  text-align: center;
+  padding: 2rem;
+  color: #7c9f35;
+  font-size: xx-large;
+}
+
+.subtitle {
+  text-align: center;
+  color: #7c9f35;
+  font-style: italic;
+}
+
 @media screen and (min-width: 650px) {
-  .button{
+  .button {
     font-size: 2.5rem;
   }
 }
@@ -161,11 +174,11 @@ body,
 }
 
 @media screen and (min-width: 650px) {
-  .landing-page{
+  .landing-page {
     background-image: url(/images/bird-home.jpg);
   }
-  .landing-page__button{
-    bottom: 25%
+  .landing-page__button {
+    bottom: 25%;
   }
 }
 
@@ -242,18 +255,23 @@ body,
 
 /*feed*/
 
+.feed-card {
+  padding: 0.6rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+  border: 2px solid #d1d646;
+  border-radius: 0.3rem;
+  margin: 0.8rem;
+}
+
 .feed-card__image {
   border-radius: 50%;
 }
 
 /*form*/
-
-.form-title {
-  text-align: center;
-  padding: 2rem;
-  color: #7c9f35;
-  font-size: xx-large;
-}
 
 .form-section {
   display: flex;
