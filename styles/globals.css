@@ -29,14 +29,6 @@ body,
   color: #ffff;
 }
 
-.titles {
-  position: absolute;
-  background-color: black;
-  opacity: 0.5;
-  color: #ffff;
-  width: 100%;
-}
-
 .title {
   text-align: center;
   padding: 2rem;
@@ -214,6 +206,29 @@ body,
   z-index: 2;
   font-size: 1.5rem;
 }
+
+.titles {
+  position: absolute;
+  background-color: black;
+  bottom: 0;
+  opacity: 0.5;
+  color: #ffff;
+  width: 100%;
+}
+
+@media screen and (min-width: 650px) {
+  .catalogue{
+    display: flex;
+  }
+  .bird-card{
+    max-height: 300px;
+  }
+  .bird-card__image{
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
 
 /*contact*/
 

@@ -15,7 +15,7 @@ const BirdCard = ({ bird }: Props): ReactElement => {
           <h3>{bird.name}</h3>
           <h4 className="bird-card__subtitle">{bird.latin}</h4>
         </div>
-        <Image src={bird.image} width={400} height={300} alt="bird" />
+        <Image src={bird.image} width={400} height={300} alt="bird" className="bird-card__image"/>
       </div>
     </Link>
   );
