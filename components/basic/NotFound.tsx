@@ -3,7 +3,7 @@ import React from "react";
 
 const NotFound = () => {
   return (
-    <div>
+    <div className="not-found">
       <h3 className="title">Teď tu byl...</h3>
       <Image
         src="/images/not-found.jpg"
