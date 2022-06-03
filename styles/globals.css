@@ -42,6 +42,14 @@ body,
   font-style: italic;
 }
 
+.titles {
+  position: absolute;
+  background-color: black;
+  opacity: 0.5;
+  color: #ffff;
+  width: 100%;
+}
+
 @media screen and (min-width: 650px) {
   .button {
     font-size: 2.5rem;
@@ -207,15 +215,6 @@ body,
   font-size: 1.5rem;
 }
 
-.titles {
-  position: absolute;
-  background-color: black;
-  bottom: 0;
-  opacity: 0.5;
-  color: #ffff;
-  width: 100%;
-}
-
 .not-found{
   width: 20rem;
   margin: auto;
@@ -228,10 +227,7 @@ body,
   .bird-card{
     max-height: 300px;
   }
-  .bird-card__image{
-    height: 100%;
-    object-fit: cover;
-  }
+ 
 }
 
 
