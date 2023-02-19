@@ -193,6 +193,10 @@ body,
 
 .catalogue {
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
 }
 
 .bird-card {
@@ -215,21 +219,19 @@ body,
   font-size: 1.5rem;
 }
 
-.not-found{
+.not-found {
   width: 20rem;
   margin: auto;
 }
 
 @media screen and (min-width: 650px) {
-  .catalogue{
+  .catalogue {
     display: flex;
   }
-  .bird-card{
+  .bird-card {
     max-height: 300px;
   }
- 
 }
-
 
 /*contact*/
 
@@ -281,11 +283,11 @@ body,
   .button--contact:hover {
     background-color: #7c9f35;
   }
-  .button--contact{
-      left: calc(50% - 108px);
+  .button--contact {
+    left: calc(50% - 108px);
   }
-  .contact{
-     background-image: url(/images/contact-web.jpg);
+  .contact {
+    background-image: url(/images/contact-web.jpg);
   }
   .media__icon:hover {
     color: #d1d646;
